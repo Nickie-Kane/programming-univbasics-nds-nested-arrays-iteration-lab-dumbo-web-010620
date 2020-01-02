@@ -52,7 +52,7 @@ def total_even_pairs(src)
   while row_index < src.length do 
      element_index = 0
      if (src[row_index][element_index] % 2 == 0) && (src[row_index][element_index + 1] % 2 == 0)
-       binding.pry
+       
         total += (src[row_index][element_index]) + (src[row_index][element_index + 1])
      end
      row_index += 1 
