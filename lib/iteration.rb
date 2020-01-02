@@ -1,3 +1,4 @@
+require "pry"
 def join_ingredients(src)
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
@@ -49,6 +50,7 @@ def total_even_pairs(src)
   row_index = 0
   total = 0
   while row_index <= src.count do 
+     binding.pry
      element_index = 0
      if (src[row_index][element_index] % 2 == 0) && (src[row_index][element_index + 1] % 2 == 0)
         total += (src[row_index][element_index]) + (src[row_index][element_index + 1])
